@@ -1,0 +1,89 @@
+google_drive:
+  # Google Drive API凭证文件路径
+  credentials_path: "credentials/google_drive_credentials.json"
+  
+  # 本地缓存目录
+  cache_dir: "data/cache"
+  
+  # 文件夹结构
+  folders:
+    # 蛋白质数据
+    protein_data:
+      path: "protein_data"
+      subfolders:
+        - "structures"  # 结构文件
+        - "sequences"   # 序列数据
+        - "annotations" # 注释数据
+    
+    # 药物数据
+    drug_data:
+      path: "drug_data"
+      subfolders:
+        - "structures"     # 结构文件
+        - "properties"     # 性质数据
+        - "interactions"   # 相互作用数据
+    
+    # 实验数据
+    experimental_data:
+      path: "experimental_data"
+      subfolders:
+        - "binding_data"    # 结合数据
+        - "activity_data"   # 活性数据
+        - "validation_data" # 验证数据
+    
+    # 计算结果
+    results:
+      path: "results"
+      subfolders:
+        - "docking_results"     # 对接结果
+        - "scoring_results"     # 评分结果
+        - "analysis_results"    # 分析结果
+        - "validation_results"  # 验证结果
+    
+    # 临时数据
+    temp:
+      path: "temp"
+      cleanup_after_days: 7  # 7天后自动清理
+    
+    # 日志
+    logs:
+      path: "logs"
+      retention_days: 30  # 保留30天的日志
+
+  # 同步设置
+  sync:
+    # 自动同步间隔（秒）
+    interval: 3600
+    
+    # 重试设置
+    retry:
+      max_attempts: 3
+      delay_seconds: 5
+      
+    # 并发设置
+    concurrency:
+      max_workers: 4
+      chunk_size: 1048576  # 1MB
+      
+    # 进度记录
+    progress:
+      enabled: true
+      update_interval: 1  # 秒
+      
+  # 缓存设置
+  cache:
+    # 最大缓存大小（字节）
+    max_size: 10737418240  # 10GB
+    
+    # 清理策略
+    cleanup:
+      min_free_space: 1073741824  # 1GB
+      max_age_days: 30
+      
+    # 预加载设置
+    preload:
+      enabled: true
+      patterns:
+        - "*.pdb"
+        - "*.mol2"
+        - "*.sdf" 

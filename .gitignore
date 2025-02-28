@@ -1,0 +1,143 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Data
+data/
+*.csv
+*.xlsx
+*.db
+*.sqlite3
+
+# Logs
+logs/
+*.log
+
+# Cache
+.cache/
+.pytest_cache/
+
+# Build
+*.pyd
+*.dll
+*.exe
+*.o
+*.so
+
+# Temp files
+*.swp
+*~
+.DS_Store
+
+# Credentials
+credentials/
+*.json
+!package.json
+!package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Data
+data/
+*.csv
+*.xlsx
+*.db
+*.sqlite3
+
+# Logs
+logs/
+*.log
+
+# Cache
+.cache/
+.pytest_cache/
+
+# Build
+*.pyd
+*.dll
+*.exe
+*.o
+*.so
+
+# Temp files
+*.swp
+*~
+.DS_Store 
